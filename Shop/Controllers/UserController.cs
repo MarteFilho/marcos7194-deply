@@ -51,7 +51,6 @@ namespace Shop.Controllers
 
             try
             {
-                user.Role = "usuario";
                 context.Users.Add(user);
                 await context.SaveChangesAsync();
                 user.Password = "";
