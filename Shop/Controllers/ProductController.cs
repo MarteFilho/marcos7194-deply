@@ -72,7 +72,6 @@ namespace Shop.Controllers
         //Cria um produto
         [HttpPost]
         [Route("")]
-        [Authorize(Roles = "adm")]
         public async Task<ActionResult<Product>> Post(
             [FromBody] Product produto,
             [FromServices] DataContext context
