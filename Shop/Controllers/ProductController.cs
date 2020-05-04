@@ -70,6 +70,7 @@ namespace Shop.Controllers
         }
 
         //Cria um produto
+        [AllowAnonymous]
         [HttpPost]
         [Route("")]
         public async Task<ActionResult<Product>> Post(
