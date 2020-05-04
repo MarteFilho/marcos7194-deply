@@ -67,7 +67,6 @@ namespace Shop.Controllers
             //Cria uma categoria 
             [HttpPost]
             [Route("")]
-            [Authorize(Roles ="adm")]
             public async Task<ActionResult<List<Category>>> Post(
                 [FromBody]Category model,
                 [FromServices] DataContext context
